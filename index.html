@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OKU — RUZEN Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="png" href="ruzen.png">
+</head>
+<body>
+  <!-- Cinematic Intro Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-inner">
+      <svg class="preloader-logo" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="logo-stroke" d="M150 175 L268 140 C276 138 282 146 277 153 L150 183 Z" fill="#FFFFFF"/>
+        <path class="logo-stroke" d="M105 225 L170 202 C177 200 182 207 177 213 L105 232 Z" fill="#FFFFFF"/>
+        <path class="logo-stroke" d="M155 248 L212 228 C217 226 221 232 217 236 L155 253 Z" fill="#FFFFFF"/>
+        <path class="logo-stroke" d="M178 212 L288 158 L272 184 L398 142 C384 205 335 248 258 262 L226 306 L246 302 L152 368 L212 296 L194 300 L232 246 C288 236 322 215 334 186 L228 224 L242 198 L178 218 Z" fill="#FFFFFF"/>
+      </svg>
+      <div class="terminal-loader">
+        <span id="loader-text">INITIALIZING RUZEN KERNEL...</span>
+        <span id="loader-percent">0%</span>
+      </div>
+      <div class="loader-bar"><div id="loader-progress" class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Fixed Background White Ruzen Logo -->
+  <div class="bg-logo-wrapper" aria-hidden="true">
+    <svg id="bg-ruzen-logo" class="bg-ruzen-logo" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M150 175 L268 140 C276 138 282 146 277 153 L150 183 Z" fill="#FFFFFF"/>
+      <path d="M105 225 L170 202 C177 200 182 207 177 213 L105 232 Z" fill="#FFFFFF"/>
+      <path d="M155 248 L212 228 C217 226 221 232 217 236 L155 253 Z" fill="#FFFFFF"/>
+      <path d="M178 212 L288 158 L272 184 L398 142 C384 205 335 248 258 262 L226 306 L246 302 L152 368 L212 296 L194 300 L232 246 C288 236 322 215 334 186 L228 224 L242 198 L178 218 Z" fill="#FFFFFF"/>
+    </svg>
+    <div class="ambient-glow"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="glass-header">
+    <a href="#home" class="brand">
+      <svg class="brand-icon" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M150 175 L268 140 C276 138 282 146 277 153 L150 183 Z" fill="#FFFFFF"/>
+        <path d="M105 225 L170 202 C177 200 182 207 177 213 L105 232 Z" fill="#FFFFFF"/>
+        <path d="M155 248 L212 228 C217 226 221 232 217 236 L155 253 Z" fill="#FFFFFF"/>
+        <path d="M178 212 L288 158 L272 184 L398 142 C384 205 335 248 258 262 L226 306 L246 302 L152 368 L212 296 L194 300 L232 246 C288 236 322 215 334 186 L228 224 L242 198 L178 218 Z" fill="#FFFFFF"/>
+      </svg>
+      <span>OZODBEK <small>RUZEN</small></span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#about" data-i18n="nav_about">Men haqimda</a>
+      <a href="#skills" data-i18n="nav_skills">Ko'nikmalar</a>
+      <a href="#education" data-i18n="nav_edu">Ta'lim</a>
+      <a href="#projects" data-i18n="nav_projects">Loyihalar</a>
+      <a href="#contact" data-i18n="nav_contact">Aloqa</a>
+    </nav>
+
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="uz">UZ</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="ru">RU</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero container">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        <span data-i18n="hero_badge">Cyber Security & Web Development</span>
+      </div>
+      <h1>
+        <span data-i18n="hero_greeting">Salom, men</span>
+        <mark>Ozodbek Komilov</mark>
+      </h1>
+      <p class="hero-subtitle" data-i18n="hero_sub">
+        Kiberxavfsizlik, Linux tizimlari, Python avtomatlashtirish va zamonaviy veb-interfeyslar yaratishga ixtisoslashgan dasturchi.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary" data-i18n="btn_projects">Loyihalarni ko'rish</a>
+        <a href="#contact" class="btn-glass" data-i18n="btn_contact">Bog'lanish</a>
+      </div>
+    </section>
+
+    <!-- Ticker Marquee -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>Cyber Security ✦ Web Development ✦ Python ✦ Linux ✦ Networking ✦ Ethical Hacking ✦ </span>
+        <span>Cyber Security ✦ Web Development ✦ Python ✦ Linux ✦ Networking ✦ Ethical Hacking ✦ </span>
+        <span>Cyber Security ✦ Web Development ✦ Python ✦ Linux ✦ Networking ✦ Ethical Hacking ✦ </span>
+        <span>Cyber Security ✦ Web Development ✦ Python ✦ Linux ✦ Networking ✦ Ethical Hacking ✦ </span>
+      </div>
+    </div>
+
+    <!-- 01 About -->
+    <section id="about" class="section container">
+      <div class="section-head">
+        <span class="sec-num">01</span>
+        <h2 data-i18n="sec_about">Men haqimda</h2>
+      </div>
+      <div class="grid-4">
+        <div class="glass-card">
+          <h3 data-i18n="about_1_t">Cyber Security</h3>
+          <p data-i18n="about_1_d">Tarmoq xavfsizligi, zaifliklarni tahlil qilish va Linux muhitida himoya mexanizmlarini o'rganish.</p>
+        </div>
+        <div class="glass-card">
+          <h3 data-i18n="about_2_t">Web Development</h3>
+          <p data-i18n="about_2_d">HTML, CSS va JavaScript yordamida tezkor, responsiv va minimalistik veb-ilovalarni ishlab chiqish.</p>
+        </div>
+        <div class="glass-card">
+          <h3 data-i18n="about_3_t">Python & Linux</h3>
+          <p data-i18n="about_3_d">Kundalik vazifalarni avtomatlashtirish, skriptlar yozish va terminal muhitida samarali ishlash.</p>
+        </div>
+        <div class="glass-card">
+          <h3 data-i18n="about_4_t">Doimiy Rivojlanish</h3>
+          <p data-i18n="about_4_d">Yangi texnologiyalar, CTF laboratoriyalari va amaliy loyihalar orqali tajriba orttirish.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 Skills -->
+    <section id="skills" class="section container">
+      <div class="section-head">
+        <span class="sec-num">02</span>
+        <h2 data-i18n="sec_skills">Texnik ko'nikmalar</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="glass-card skill-item">
+          <div class="skill-top"><span>HTML</span><em>100%</em></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 100%"></div></div>
+        </div>
+        <div class="glass-card skill-item">
+          <div class="skill-top"><span>CSS</span><em>90%</em></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 90%"></div></div>
+        </div>
+        <div class="glass-card skill-item">
+          <div class="skill-top"><span>JavaScript</span><em>75%</em></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 75%"></div></div>
+        </div>
+        <div class="glass-card skill-item">
+          <div class="skill-top"><span>Python</span><em>70%</em></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 70%"></div></div>
+        </div>
+        <div class="glass-card skill-item">
+          <div class="skill-top"><span>Linux</span><em>55%</em></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 55%"></div></div>
+        </div>
+        <div class="glass-card skill-item">
+          <div class="skill-top"><span>Cyber Security</span><em>50%</em></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 50%"></div></div>
+        </div>
+        <div class="glass-card skill-item">
+          <div class="skill-top"><span>MS Office / Excel</span><em>95%</em></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 95%"></div></div>
+        </div>
+        <div class="glass-card skill-item">
+          <div class="skill-top"><span>Photoshop</span><em>80%</em></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w: 80%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 Education -->
+    <section id="education" class="section container">
+      <div class="section-head">
+        <span class="sec-num">03</span>
+        <h2 data-i18n="sec_edu">Ta'lim va Tajriba</h2>
+      </div>
+      <div class="grid-2">
+        <div class="glass-card edu-card">
+          <span class="tag">2016 — 2026</span>
+          <h3>Bright Education School NTM</h3>
+          <p data-i18n="edu_1_d">Umumiy o'rta ta'lim, ingliz tili va axborot texnologiyalari yo'nalishida chuqurlashtirilgan bilimlar.</p>
+        </div>
+        <div class="glass-card edu-card">
+          <span class="tag" data-i18n="edu_2_tag">Mustaqil Laboratoriya</span>
+          <h3 data-i18n="edu_2_t">Cyber Security & Full-Stack Self-Study</h3>
+          <p data-i18n="edu_2_d">Linux administratsiyasi, Nmap tarmoq skanerlash, Python skripting va veb-dasturlash amaliyoti.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Projects -->
+    <section id="projects" class="section container">
+      <div class="section-head">
+        <span class="sec-num">04</span>
+        <h2 data-i18n="sec_projects">Loyihalar</h2>
+      </div>
+      <div class="grid-2">
+        <div class="glass-card project-card" data-project="0">
+          <div class="proj-top">
+            <span class="proj-num">01</span>
+            <span class="proj-tech">Linux · Nmap</span>
+          </div>
+          <h3>Cyber Security Lab</h3>
+          <p data-i18n="proj_1_d">Tarmoq portlarini tahlil qilish, xavfsizlik auditi va Linux muhitida amaliy laboratoriya mashg'ulotlari.</p>
+          <span class="proj-more" data-i18n="proj_more" href="">Batafsil →</span>
+        </div>
+
+        <div class="glass-card project-card" data-project="1">
+          <div class="proj-top">
+            <span class="proj-num">02</span>
+            <span class="proj-tech">HTML · CSS · JS</span>
+          </div>
+          <h3>Developer Portfolio (RUZEN)</h3>
+          <p data-i18n="proj_2_d">Shaffof glassmorphism dizayn, kinematik intro va ko'p tilli tizimga ega shaxsiy portfolio veb-sayti.</p>
+          <span class="proj-more" data-i18n="proj_more">Batafsil →</span>
+        </div>
+
+        <div class="glass-card project-card" data-project="2">
+          <div class="proj-top">
+            <span class="proj-num">03</span>
+            <span class="proj-tech">Python</span>
+          </div>
+          <h3>Python Projects</h3>
+          <p data-i18n="proj_3_d">Avtomatlashtirish vositalari, CLI utilitalar va ma'lumotlarni qayta ishlash skriptlari to'plami.</p>
+          <span class="proj-more" data-i18n="proj_more">Batafsil →</span>
+        </div>
+
+        <div class="glass-card project-card" data-project="3">
+          <div class="proj-top">
+            <span class="proj-num">04</span>
+            <span class="proj-tech">Telegram · JS</span>
+          </div>
+          <h3>Telegram Web App</h3>
+          <p data-i18n="proj_4_d">Telegram ekotizimi ichida tezkor ishlovchi interaktiv Mini App veb-ilovasi.</p>
+          <span class="proj-more" data-i18n="proj_more">Batafsil →</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 Languages -->
+    <section id="languages" class="section container">
+      <div class="section-head">
+        <span class="sec-num">05</span>
+        <h2 data-i18n="sec_langs">Tillar</h2>
+      </div>
+      <div class="grid-3">
+        <div class="glass-card lang-card">
+          <strong data-i18n="lang_uz">O'zbek tili</strong>
+          <span data-i18n="lang_uz_lvl">Ona tili (C2)</span>
+        </div>
+        <div class="glass-card lang-card">
+          <strong data-i18n="lang_en">Ingliz tili</strong>  
+          <span>B2 / IELTS 6.5</span>
+        </div>
+        <div class="glass-card lang-card">
+          <strong data-i18n="lang_ru">Rus tili</strong>
+          <span>B2</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Contact -->
+    <section id="contact" class="section container">
+      <div class="glass-card contact-box">
+        <p class="contact-label" data-i18n="contact_sub">Hamkorlik va loyihalar uchun aloqa</p>
+        <a href="mailto:okomilov471@gmail.com" class="contact-email">okomilov471@gmail.com</a>
+        <div class="social-links">
+          <a href="https://t.me/wlvlk" target="_blank" rel="noopener" class="btn-primary">Telegram ↗</a>
+          <a href="https://github.com/nousway21" target="_blank" rel="noopener" class="btn-glass">GitHub ↗</a>
+          <a href="tel:+998888696961" rel="tel" class="btn-glass">Telefon ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="glass-card modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Close">×</button>
+      <span id="modal-tech" class="tag"></span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <div class="modal-actions">
+        <a href="https://github.com/nousway21" target="_blank" rel="noopener" class="btn-primary">GitHub Repository ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Ozodbek Komilov · RUZEN Architecture · All thing's are preserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
